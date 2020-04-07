@@ -28,6 +28,9 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "single-spa-react": "^2.13.0",
+    "systemjs-webpack-interop": "^2.0.0"
   }
 }

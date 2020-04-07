@@ -15,9 +15,12 @@
         <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/extras/named-exports.min.js"></script>
     </head>
     <body>
-        <div id="root-app2"></div>
+        <div id="microfrontend-react-sspa-app2"></div>
         <script>
-            System.import('microfrontend-react-sspa/app2')
+            System.import('microfrontend-react-sspa/app2').then((module) => {
+                module.bootstrap();
+                module.mount({name: 'microfrontend-react-sspa-app2'});
+            })
         </script>
     </body>
 </html>
